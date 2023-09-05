@@ -15,11 +15,11 @@
           <a class="navbar-brand" href="#">
             <img src="images/pepe_ohana_logo.png" alt="ページロゴ" width="auto" height="70">
           </a>
-          <div class="dropdown">
-            <button class="btn btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="btn-group">
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
               未ログイン
             </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <ul class="dropdown-menu dropdown-menu-end">
               <li><a class="dropdown-item" href="#">ログイン</a></li>
               <li><a class="dropdown-item" href="#">新規ユーザー登録</a></li>
             </ul>
@@ -31,18 +31,18 @@
     <!-- ログイン済ヘッダー -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="images/pepe_ohana_logo.png" alt="ページロゴ" width="auto" height="70">
-          </a>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              userName
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">マイページ</a></li>
-              <li><a class="dropdown-item" href="#">ログアウト</a></li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="#">
+                <img src="images/pepe_ohana_logo.png" alt="ページロゴ" width="auto" height="70">
+            </a>
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    userName
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">マイページ</a></li>
+                    <li><a class="dropdown-item" href="#">ログアウト</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- ログイン済ヘッダーここまで -->
@@ -64,12 +64,11 @@
             <div class="h4 pb-2 mb-4 text-black border-bottom border-black">
                 ねこまっち新着情報
             </div>
-            <!-- 猫カード -->
             <div class="row">
-                <!-- カードのコンテンツ -->
-                <div class="col-6 col-md-4 col-lg-3">
+               <!-- カードのコンテンツ -->
+               <div class="col-6 col-md-4 col-lg-3">
                     <div class="card mb-3">
-                        <img src="images/image1.png" class="card-img-top" alt="猫画像">
+                        <img src="images/cat_1.jpg" style="height:180px; width: 100%; object-fit: cover;" class="card-img-top" alt="猫画像">
                         <div class="card-body">
                             <h5 class="card-title text-center">Card with stretched link</h5>
                             <p class="card-text text-right">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -79,10 +78,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- カードのコンテンツ -->
-                <div class="col-6 col-md-4 col-lg-3">
+               <!-- カードのコンテンツ -->
+               <div class="col-6 col-md-4 col-lg-3">
                     <div class="card mb-3">
-                        <img src="images/image1.png" class="card-img-top" alt="猫画像">
+                        <img src="images/cat_2.jpg" style="height:180px; width: 100%; object-fit: cover;" class="card-img-top" alt="猫画像">
                         <div class="card-body">
                             <h5 class="card-title text-center">Card with stretched link</h5>
                             <p class="card-text text-right">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -92,10 +91,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- カードのコンテンツ -->
-                <div class="col-6 col-md-4 col-lg-3">
+               <!-- カードのコンテンツ -->
+               <div class="col-6 col-md-4 col-lg-3">
                     <div class="card mb-3">
-                        <img src="images/image1.png" class="card-img-top" alt="猫画像">
+                        <img src="images/cat_3.jpg" style="height:180px; width: 100% ; object-fit: cover;" class="card-img-top" alt="猫画像">
                         <div class="card-body">
                             <h5 class="card-title text-center">Card with stretched link</h5>
                             <p class="card-text text-right">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -105,10 +104,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- カードのコンテンツ -->
-                <div class="col-6 col-md-4 col-lg-3">
+               <!-- カードのコンテンツ -->
+               <div class="col-6 col-md-4 col-lg-3">
                     <div class="card mb-3">
-                        <img src="images/image1.png" class="card-img-top" alt="猫画像">
+                        <img src="images/cat_4.jpg" style="height:180px; width: 100%; object-fit: cover;" class="card-img-top" alt="猫画像">
                         <div class="card-body">
                             <h5 class="card-title text-center">Card with stretched link</h5>
                             <p class="card-text text-right">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -118,6 +117,7 @@
                         </div>
                     </div>
                 </div>
+               
             </div>
         </div>
     </div>
@@ -129,22 +129,20 @@
             TOPへ
         </a>
     </div>
-    <div class="container">
-        <footer class="mt-3 d-flex flex-wrap justify-content-between align-items-center my-4 border-top">
-          <p class="col-md-4 mb-0 text-body-secondary">© 2023 Company, Inc</p>
-          <a href="#" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
           </a>
-      
-          <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-          </ul>
-        </footer>
-    </div>
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </footer>
     <!-- フッター　ここまで -->
 
 </body>
