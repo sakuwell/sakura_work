@@ -56,31 +56,61 @@
     <!-- ヒーロー画像 -->
 
 
+    <!-- ユーザー情報テーブル -->
+    <div class="container">
+        <div class="h4 pb-2 mt-4 mb-4" style="border-bottom:solid 0.5px; border-color: #523F24;">
+            ユーザー情報
+        </div>
+        <table class="table">
+            <tr>
+                <th style="width:20%;"><small>ユーザー名</small></th>
+                <td style="width:80%;">pepe</td>
+            </tr>
+            <tr>
+                <th><small>ユーザーID</small></th>
+                <td>pepe@pepe.com</td>
+            </tr>
+        </table>
+        <div style="text-align: center;">
+            <button type="submit" class="btn btn-sm" style=" width:120px; background-color:#E87B4C; color:#ffffff;"
+                onclick="location.href='Message.java?id=<%= message.getId() %>'">編集する
+            </button>
+        </div>
     </div>
 
     <!-- ねこ情報テーブル -->
     <div class="container">
         <div class="h4 pb-2 mt-4 mb-4" style="border-bottom:solid 0.5px; border-color: #523F24;">
-            ねこまっち検索
+            ねこまっち公開中
         </div>
+
         <!-- カードのコンテンツ -->
         <div class="row mt-4">
             <div class="col-sm-4 col-md-3 mb-2">
-                <img src="images/cat_1.jpg" alt="" class="rounded" style="height:150px; width: 100%; object-fit: cover;">
+                <img src="images/cat_1.jpg" alt="" class="rounded" style="height:170px; width: 100%; object-fit: cover;">
             </div>
             <div class="col-sm-8 col-md-9">
                 <table class="table">
                     <tr>
-                        <th style="width:15%;"><small>名前</small></th>
-                        <td style="width:35%;">pepe</td>
-                        <th style="width:15%;"><small>描種</small></th>
-                        <td style="width:35%;">アメリカンショートヘアー</td>
+                        <th><small>名前</small></th>
+                        <td colspan="2">pepe</td>
+                        <td style="text-align: right;">
+                            <button type="submit" class="btn btn-sm" style=" width:120px; background-color:#E87B4C; color:#ffffff;"
+                                onclick="location.href='Message.java?id=<%= message.getId() %>'">編集/削除する
+                            </button>
+                        </td>
                     </tr>
                     <tr>
-                        <th><small>体重</small></th>
-                        <td>1.5kg</td>
+                        <th style="width:18%;"><small>性別</small></th>
+                        <td style="width:24%;">男の子</td>
+                        <th style="width:18%;"><small>描種</small></th>
+                        <td style="width:40%;">アメリカンショートヘアー</td>
+                    </tr>
+                    <tr>
                         <th><small>誕生日</small></th>
                         <td>2020/09/09</td>
+                        <th><small>体重</small></th>
+                        <td>1.5kg</td>
                     </tr>
                     <tr>
                         <th><small>コメント</small></th>
@@ -88,34 +118,9 @@
                     </tr>
                 </table>
             </div>
-        </div>
-        <!-- カードのコンテンツ -->
-        <div class="row mt-4">
-            <div class="col-sm-4 col-md-3 mb-2">
-                <img src="images/cat_1.jpg" alt="" class="rounded" style="height:150px; width: 100%; object-fit: cover;">
-            </div>
-            <div class="col-sm-8 col-md-9">
-                <table class="table table-bordered table-border">
-                    <tr>
-                        <th style="width:15%;"><small>名前</small></th>
-                        <td style="width:35%;">pepe</td>
-                        <th style="width:15%;"><small>描種</small></th>
-                        <td style="width:35%;">アメリカンショートヘアー</td>
-                    </tr>
-                    <tr>
-                        <th><small>体重</small></th>
-                        <td>1.5kg</td>
-                        <th><small>誕生日</small></th>
-                        <td>2020/09/09</td>
-                    </tr>
-                    <tr>
-                        <th><small>コメント</small></th>
-                        <td colspan="3">ここにコメントが入ります。ここにコメントが入ります。ここにコメントが入ります。</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
+        </div><!-- ネコテーブルループここまで -->
+        
+    </div><!-- ネコ情報テーブルここまで -->
     
     <!-- メッセージテーブル -->
     <div class="container">
@@ -129,7 +134,6 @@
         <div class="h4 pb-2 mt-4 mb-4" style="border-bottom:solid 0.5px; border-color: #523F24;">
             メッセージ一覧
         </div>
-
 
         <p class="mt-4 mb-2">受信メッセージ</p>
         <div class="accordion accordion-flush" id="reciever">
